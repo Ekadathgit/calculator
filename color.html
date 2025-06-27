@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample HTML Page</title>
+</head>
+
+    <body>
+        <style>
+            button{
+                background-color:red ;
+                border-radius: 5px;
+                animation: backwards;
+            }
+        </style>
+  <button onclick="a('red')">red</button>
+  <button style="background-color: blue;" onclick="a('blue')">blue</button>
+
+  <button onclick="a('yellow')">yellow</button>
+  <button onclick="a('green')">green</button>
+</body>
+<script> 
+function a(color){
+    document.body.style.backgroundColor = color
+}
+</script>
+</html>
